@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ProjetoFinal</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tmb_result">Taxa de Metabolismo Basal: %s</string>
+    <string name="total_calories">Calorias totais: %s</string>
+    <string name="remaining_calories">Calorias restantes: %s</string>
+    <string name="consumed_calories">Calorias consumidas: %s</string>
+    <string name="display_calories">%s kcal</string>
+    <string name="adicionar">Adicionar</string>
+    <string name="calcular_tmb">Calcular TMB</string>
+    <string name="lista_alimentos">Lista Alimentos</string>
+    <string name="peso_kg">Peso (kg)</string>
+    <string name="altura_cm">Altura (cm)</string>
+    <string name="idade_anos">Idade (anos)</string>
+    <string name="homem">Homem</string>
+    <string name="mulher">Mulher</string>
+    <string name="calc_calo">CalcCalo</string>
+    <string name="taxa_metabolismo_basal">Taxa de metabolismo basal</string>
+    <string name="calorias_diarias">Calorias Diárias</string>
+</resources>

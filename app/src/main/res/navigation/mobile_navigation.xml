@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.projetofinal.ui.order.StartFragment"
+        android:label="@string/calc_calo"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_tmbFragment"
+            app:destination="@id/tmbFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_diaryFragment"
+            app:destination="@id/diaryFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tmbFragment"
+        android:name="com.example.projetofinal.ui.order.TmbFragment"
+        android:label="@string/taxa_metabolismo_basal"
+        tools:layout="@layout/fragment_tmb" />
+    <fragment
+        android:id="@+id/diaryFragment"
+        android:name="com.example.projetofinal.ui.order.DiaryFragment"
+        android:label="@string/calorias_diarias"
+        tools:layout="@layout/fragment_diary" >
+        <action
+            android:id="@+id/action_diaryFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.projetofinal.ui.order.ListFragment"
+        android:label="@string/lista_alimentos"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_diaryFragment"
+            app:destination="@id/diaryFragment" />
+    </fragment>
+</navigation>
